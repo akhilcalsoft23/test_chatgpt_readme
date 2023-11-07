@@ -9,6 +9,6 @@ For this module, There are 5 roles.
 For this module, There are 6 playbooks, Where
 1. Playbook **intel_aws_mysql.yml** - Used to create an Amazon RDS Intel optimized instance for MySQL, it uses Terraform module **terraform-intel-aws-mysql** and being called by Ansible module community.general.terraform
 2. Playbook **intel_optimized_mysql_server.yml** - 
-3. Playbook **intel-optimized-mysql-ico-by-densify.yml** - It executes role called [intel\_optimized\_mysql\_server\_ico\_by\_densify]("#input_intel_optimized_mysql_server_ico_by_densify")
+3. Playbook **intel-optimized-mysql-ico-by-densify.yml** - It executes role called [intel\_optimized\_mysql\_server\_ico\_by\_densify](#input_intel_optimized_mysql_server_ico_by_densify)
 5. Playbook **intel_optimized_mysql_server_vpc_creation.yml** - 
 6. Playbook **intel_optimized_mysql_server.yml** - 
