@@ -1,13 +1,14 @@
-# test_chatgpt_readme
-test_chatgpt
+To use a role in an Ansible playbook, you simply need to list it in the roles section of the playbook. Ansible will then automatically load the role and execute its tasks.
 
-### asdasdsadasdasda
+For this module, There are 5 roles.
+1. <a name="input_intel_optimized_mysql_server_ico_by_densify"> intel_optimized_mysql_server</a> 
 
-| Key Name | Description | Type | Value |
-| --- | --- | --- | --- |
-| <a name="input_vpc_state"></a> [vpc_state](#input_vpc_state) | Represents the state of the VPC | String | present |
-| <a name="input_vpc_name"></a> [vpc_name](#input_vpc_name) | Name of the VPC | String | "my-vpc" |
-| <a name="input_vpc_cidr"></a> [vpc_cidr](#input_vpc_cidr) | CIDR block for the VPC | String | "10.0.0.0/16" |
-| <a name="input_vpc_azs"></a> [vpc_azs](#input_vpc_azs) | List of Availability Zones for the VPC | List of Strings | ["ap-south-2a", "ap-south-2b", "ap-south-2c"] |
-| <a name="input_vpc_private_subnets"></a> [vpc_private_subnets](#input_vpc_private_subnets) | List of private subnets in the VPC | List of Strings | ["10.0.1.0/24", "10.0.2.0/24", "10.0.3.0/24"] |
-| <a name="input_vpc_tags"></a> [vpc_tags](#input_vpc_tags) | Tags associated with the VPC | Dictionary | { Owner: "Intel.Cloud.Optimization.Modules@intel.com", Duration: "4" } |
+**Playbook**:- An Ansible playbook is a YAML file that describes the tasks, are composed of a series of plays, which are groups of tasks that are executed in a specific order. Each play defines a set of tasks that should be executed on a specific group of hosts.
+         Playbooks can also include variables, which can be used to store data that is used by the tasks. This makes it easy to reuse playbooks for different environments and configurations.
+         for this module. 
+For this module, There are 6 playbooks, Where
+1. Playbook **intel_aws_mysql.yml** - Used to create an Amazon RDS Intel optimized instance for MySQL, it uses Terraform module **terraform-intel-aws-mysql** and being called by Ansible module community.general.terraform
+2. Playbook **intel_optimized_mysql_server.yml** - 
+3. Playbook **intel-optimized-mysql-ico-by-densify.yml** - It executes role called [intel\_optimized\_mysql\_server\_ico\_by\_densify]("#input_intel_optimized_mysql_server_ico_by_densify")
+5. Playbook **intel_optimized_mysql_server_vpc_creation.yml** - 
+6. Playbook **intel_optimized_mysql_server.yml** - 
